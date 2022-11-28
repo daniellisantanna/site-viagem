@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-bottom: 55px;
+  font-family: "Montserrat", sans-serif;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  margin: 0 15px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  margin: auto 30px;
+}
+header nav p {
+  font-weight: bold;
+}
+header {
+  height: calc(100vh - 150px);
+  background: no-repeat center/cover url("images/header-image.jpg");
+}
+.header-content {
+  max-width: 400px;
+  margin: 150px auto;
+  text-align: center;
+}
+.header-content h1 {
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 0;
+  background: #1d61dd;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.header-content p {
+  font-weight: bold;
+}
+.pacotes {
+  background: purple; /*#e1e8f7*/
+  padding: 15px;
+}
+.pacotes .pacotes-cards {
+  display: flex;
+  margin: auto;
+  max-width: 950px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pacotes .pacote-title {
+  width: 100%;
+  text-align: center;
+  margin: 25px 0;
+}
+.pacotes .card {
+  width: 250px;
+  height: 350px;
+  border-radius: 24px 0px;
+  background: white;
+  position: relative;
+  margin: 25px;
+}
+.pacotes .image-card {
+  width: 250px;
+  height: 200px;
+  border-radius: 24px 0 0;
+  object-fit: cover;
+}
+.pacotes .card-content {
+  padding: 0 15px;
+}
+.pacotes .card-content ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+.pacotes .card-content ul li {
+  font-size: 0.6rem;
+  display: flex;
+  align-items: center;
+  margin: 3px 0;
+  color: grey;
+  font-weight: bold;
+}
+.pacotes .card-content li svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+.pacotes .card-content h1 {
+  font-size: 1rem;
+}
+.pacotes .card .card-top {
+  position: absolute;
+  background: #f19b39;
+  top: 15px;
+  right: 0;
+  border-radius: 8px 0 0 8px;
+  padding: 5px 10px;
+}
+.pacotes .card .card-top p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+.pacotes .card .card-buttom {
+  position: absolute;
+  background: #1d61dd;
+  top: 160px;
+  left: 0;
+  border-radius: 0 8px 8px 0;
+  padding: 5px 10px;
+}
+.pacotes .card .card-buttom p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: white;
+  font-weight: bold;
+}
+.servicos {
+  padding: 15px;
+}
+.servicos .servicos-title {
+  text-align: center;
+  margin: 35 px 0;
+}
+.servicos .card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+.servicos .card svg {
+  width: 60px;
+  height: 60px;
+  margin: 50px;
+}
+.servicos .card svg:hover {
+  stroke: #1d61dd;
+  transform: scale(1.1);
+}
+.servicos .servicos-card {
+  margin-top: 25px;
+  display: flex;
+  max-width: 950px;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.servicos .card h3 {
+  font-weight: bold;
+}
+.servicos .card p {
+  color: grey;
+  font-size: 0.8 rem;
+  text-align: center;
+}
+.servicos .card .card-content {
+  height: 180px;
+  text-align: center;
+}
+.servicos button {
+  background: #1d61dd;
+}
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+.contato {
+  margin-top: 55px;
+  padding: 60px;
+  background: #e1e8f7;
+  position: relative;
+}
+.contato .contato-card {
+  width: 350px;
+  height: 300px;
+  background: white;
+  position: absolute;
+  z-index: 99;
+  margin-top: 50px;
+
+  border-radius: 8px;
+
+  top: calc(50% -150px);
+  left: calc(20% - 175px);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+.contato .contato-card h1 {
+  padding-left: 50px;
+  text-align: left;
+}
+.contato .contato-card ul {
+  list-style: none;
+}
+.contato .contato-card li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: grey;
+
+  display: flex;
+  align-items: center;
+}
+.contato .contato-card li svg {
+  width: 16px;
+  margin: 10px;
+}
+/* RESPONSIVIDADE */
+
+/* Especial para mapa */
+@media (max-width: 950px) {
+  .contato {
+    padding: 60px 0;
+  }
+
+  .contato .contato-card {
+    left: 40px;
+  }
+}
+
+/* Especial para mapa */
+@media (max-width: 800px) {
+  .contato {
+    padding: 20px 0;
+  }
+
+  .contato .contato-card {
+    position: static;
+    margin: 40px auto;
+  }
+}
+
+/* Landscape TABLETS and down */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    margin-bottom: 55px;
+  }
+  header nav ul {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+    background: #1d61dd;
+    color: white;
+    font-weight: bold;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav p {
+    width: 100%;
+    text-align: center;
+  }
+  .contato .contato-card li svg {
+    width: 16px;
+    margin: 10px;
+  }
+}
